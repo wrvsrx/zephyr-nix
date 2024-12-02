@@ -4,11 +4,8 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
-    pyproject-nix.url = "github:nix-community/pyproject.nix";
+    pyproject-nix.url = "github:wrvsrx/pyproject.nix/fix-is-path";
     pyproject-nix.inputs.nixpkgs.follows = "nixpkgs";
-
-    zephyr.url = "github:zephyrproject-rtos/zephyr/v3.7.0";
-    zephyr.flake = false;
 
     nix-github-actions.url = "github:nix-community/nix-github-actions";
     nix-github-actions.inputs.nixpkgs.follows = "nixpkgs";
@@ -18,7 +15,6 @@
     {
       self,
       nixpkgs,
-      zephyr,
       pyproject-nix,
       nix-github-actions,
     }:
@@ -64,7 +60,6 @@
             pkgs = nixpkgs.legacyPackages.${system};
 
             packages' = pkgs.callPackage ./. {
-              zephyr-src = zephyr;
               inherit pyproject-nix;
             };
 

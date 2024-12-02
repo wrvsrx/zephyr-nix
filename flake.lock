@@ -43,15 +43,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1731223003,
-        "narHash": "sha256-hFf8/IeZKPUubMC452Mm+JiAEnvcw/a4Cvn2bcpeJqs=",
-        "owner": "nix-community",
+        "lastModified": 1733109592,
+        "narHash": "sha256-qQd6K8RYZpwEeawyqSnDkFCPZAIbz8c7BP9490EsgQM=",
+        "owner": "wrvsrx",
         "repo": "pyproject.nix",
-        "rev": "359dd9cd562730bbd31ab164832aae4dacd9c302",
+        "rev": "9ec41f2fde25b69aa32231047a0cb9e7ed748501",
         "type": "github"
       },
       "original": {
-        "owner": "nix-community",
+        "owner": "wrvsrx",
+        "ref": "fix-is-path",
         "repo": "pyproject.nix",
         "type": "github"
       }
@@ -60,25 +61,7 @@
       "inputs": {
         "nix-github-actions": "nix-github-actions",
         "nixpkgs": "nixpkgs",
-        "pyproject-nix": "pyproject-nix",
-        "zephyr": "zephyr"
-      }
-    },
-    "zephyr": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1721992675,
-        "narHash": "sha256-rmOHH0uRU27U2T4w4+FEMcAcuiZ7W7p4vOwtSwiAFNY=",
-        "owner": "zephyrproject-rtos",
-        "repo": "zephyr",
-        "rev": "36940db938a8f4a1e919496793ed439850a221c2",
-        "type": "github"
-      },
-      "original": {
-        "owner": "zephyrproject-rtos",
-        "ref": "v3.7.0",
-        "repo": "zephyr",
-        "type": "github"
+        "pyproject-nix": "pyproject-nix"
       }
     }
   },
